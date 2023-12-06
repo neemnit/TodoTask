@@ -2,7 +2,6 @@ import React, { useRef ,useEffect} from 'react'
 
 
 const TodoForm = ({todoToUpdate,addTodo,updateTodo,resetTodoToUpdate}) => {
-  console.log(todoToUpdate,"nit")
   const todoTitleInput = useRef()
   const todoBodyInput = useRef()
   const todoUserIdInput=useRef()

@@ -3,7 +3,6 @@ import TodoContext from "./components/TodoContext";
 import { useReducer } from "react";
 const reducer = (state, action) => {
     const { payload } = action
-console.log(payload)
     switch (action.type) {
       case "ADD_TODO": {
         return {
