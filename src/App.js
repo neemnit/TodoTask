@@ -40,12 +40,13 @@ const{state,dispatch}=useContext(TodoContext)
    
   }
   const updateTodo = (todo) => {
+    console.log(todo,"nitish")
     
     const todoPos = state.todos.findIndex((tod) => {
       return tod.id === todo.id
     })
   
-    fetch('https://jsonplaceholder.typicode.com/posts/'+todo.id, {
+    fetch('https://jsonplaceholder.typicode.com/posts/'+todo.userId, {
   method: 'PUT',
   body: JSON.stringify(todo),
   headers: {
